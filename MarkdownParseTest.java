@@ -58,9 +58,9 @@ public class MarkdownParseTest {
     @Test
     public void getLinksSnippet3() throws IOException {
         String content = Files.readString(Path.of("snippet3.md"));
-        assertEquals(List.of("https://www.twitter.com", 
-    "https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule", 
-    "https://cse.ucsd.edu/"), MarkdownParse.getLinks(content));
+        assertEquals(List.of( 
+    "https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule"),
+        MarkdownParse.getLinks(content));
     }
 
 }
